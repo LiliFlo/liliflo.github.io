@@ -1,0 +1,22 @@
+public class Datos {
+
+public static void main(String[] args) {
+
+// Tipos de datos
+//Tipos primitivos. Numericos. Enteros
+docena1 = 12 // Entero tipo byte 
+edad = 19; // Entero tipo short
+capacidad = 1500; // Entero tipo int
+masa = 178823411L; // Entero tipo long. Una l o L final indica que es long.
+letra1 = ‘h’; // Tipo char (carácter). Se escribe entre comillas simples.
+//Tipos primitivos. Numericos. Reales
+diametro = 34.25f; // Tipo float. Una f o F final indica que es float.
+peso = 88.77; // Tipo double. Un número con punto decimal se interpreta normalmente como double.
+// Tipos Referenciados. 
+Array arreglo1; // Tipo Arreglos
+String cadena1="hola mundo"; // Cadena de caracteres tipo String.
+
+System.out.println();
+}
+
+}
