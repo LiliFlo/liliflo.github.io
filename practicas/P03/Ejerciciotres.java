@@ -9,9 +9,27 @@ Scanner entrada = new Scanner(System.in);
 *este objeto permitira obtener los datos que el usuario ingrese por teclado
 */
 // programa que permita la suma de dos numeros multiplos de 5
-int numero; // variable tipo entero llamada numero
-System.out.print("Ingresar un numero:"); 
-numero = entrada.nextInt();// Permite capturar el entero que ingresa el usuario, se guarda en variable numero
-System.out.print("La suma de los primeros " + numero + " numeros multiplos de 5 es de:" + ((numero*numero * 5) + (numero * 5)) / 2);
+int a, b, aux, suma= 0;
+String numeros = ""; // variables tipo string llamada numeros
+System.out.print("Ingresa el primer numero:"); 
+a = entrada.nextInt();// Permite capturar el entero que ingresa el usuario, se guarda en variable numero
+System.out.print("Ingresa el segundo numero");
+b = entrada.nextInt();
+
+if (a < 0 || b < 0){
+	System.out.println("Ingresa un numero diferente a 0");
+	return;
+}
+if (a > b){
+	aux = a;
+	a = b;
+	b = aux;
+}
+}
+ for (int i = a; i <= b; i = i + 5){
+ 	numeros = numeros + " " + i;
+ 	suma += 1;
+ }
+System.out.print("La suma de los multiplos de 5 es de:" + ((a*b * 5) / 2);
 }//Formula para hayar la suma de los multiplos de 5    n*n*5 + n*7 / 2
 }
